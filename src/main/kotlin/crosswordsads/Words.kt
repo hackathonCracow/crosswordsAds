@@ -1,0 +1,3 @@
+package crosswordsads
+
+class Words
