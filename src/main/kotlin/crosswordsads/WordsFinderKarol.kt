@@ -5,20 +5,21 @@ fun getWordsOnBoardKarol(board: Board, words: Words): List<List<String>> {
 }
 
 fun goDeper(proposal: List<Int>, board: Board, words: Words): Collection<List<String>> {
+    return neighbours[proposal.last()]!!
+            .filter { !proposal.contains(it) }
+            .map { proposal + it }
+            .filter { words.anyStartsWith(board.getStringFromIds(proposal)) }
+            .flatMap { goDeper(it, board, words) } + isAWord(proposal, board, words)
+}
+
+private fun isAWord(proposal: List<Int>, board: Board, words: Words): List<List<String>> {
     val stringFromIds = board.getStringFromIds(proposal)
-    val (exists, startsWith) = words.find(stringFromIds)
-    val current = if (exists) {
+    return if (words.isAWord(stringFromIds)) {
         println(stringFromIds)
         listOf(proposal.map { it.toString() })
     } else {
         emptyList()
     }
-    val more = if (startsWith) {
-        neighbours[proposal.last()]!!.filter { !proposal.contains(it) }.flatMap { goDeper(proposal + it, board, words) }
-    } else {
-        emptyList()
-    }
-    return current + more
 }
 
 private val neighbours = mapOf(
