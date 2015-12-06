@@ -1,5 +1,5 @@
 package crosswordsads
 
-class Board(letters: List<String>) {
+class Board(val letters: List<String>) {
 
 }
