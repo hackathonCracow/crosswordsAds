@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.interactions.Actions
 
 class SeleniumCrosswordsDriver(val webDriver: WebDriver) : CrosswordsDriver {
-
     override fun get(url: String) {
         webDriver.get(url)
     }
@@ -22,8 +21,16 @@ class SeleniumCrosswordsDriver(val webDriver: WebDriver) : CrosswordsDriver {
         return findElementById(id).text
     }
 
+    override fun pressOnId(id: Int) {
+        pressOnId(id.toString())
+    }
+
     override fun pressOnId(id: String) {
         Actions(webDriver).clickAndHold(findElementById(id)).build().perform()
+    }
+
+    override fun moveToId(id: Int) {
+        moveToId(id.toString())
     }
 
     override fun moveToId(id: String) {
@@ -42,7 +49,9 @@ interface CrosswordsDriver {
     fun typeInId(id: String, text: String)
     fun clickOnXpath(type: String)
     fun getTextById(id: String): String
+    fun pressOnId(id: Int)
     fun pressOnId(id: String)
+    fun moveToId(id: Int)
     fun moveToId(id: String)
     fun release()
 }
