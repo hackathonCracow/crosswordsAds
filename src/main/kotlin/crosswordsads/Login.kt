@@ -1,5 +1,7 @@
 package crosswordsads
 
+import java.util.*
+
 fun login(crosswordsDriver: CrosswordsDriver) {
     crosswordsDriver.typeInId("Firstname", "Maski");
     crosswordsDriver.typeInId("Lastname", "Przeciwpyłowe")
@@ -10,5 +12,7 @@ fun login(crosswordsDriver: CrosswordsDriver) {
 }
 
 fun randomEmail(): String {
-    return "uniqueemail@shitmail.me"
+    val random = Random()
+    val email = (1..10).map { random.nextInt().toChar() }.joinToString("")
+    return email + "@shitmail.me"
 }
