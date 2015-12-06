@@ -1,26 +1,26 @@
 package crosswordsads
 
 fun getWordsOnBoard(board: Board, words: Words): List<List<Int>> {
-    return (0..15).flatMap { realWords(listOf(it), board, words) }
+    return (0..15).flatMap { fromStartingPoint(listOf(it), board, words) }
 }
 
-fun realWords(lista: List<Int>, board: Board, words: Words): List<List<Int>> {
-    return possibleWords(lista, board)
-            .filter { isRealWord(board, it, words) }
-            .flatMap { if (isAWord(board, it, words)) (realWords(it, board, words) + listOf(it)) else realWords(it, board, words) }
+fun fromStartingPoint(wordData: List<Int>, board: Board, words: Words): List<List<Int>> {
+    return possibleContinuations(wordData)
+            .filter { isWordOrStartWith(board, it, words) }
+            .flatMap { if (isWord(board, it, words)) (fromStartingPoint(it, board, words) + listOf(it)) else fromStartingPoint(it, board, words) }
 }
 
-private fun isRealWord(board: Board, it: List<Int>, words: Words): Boolean {
+private fun isWordOrStartWith(board: Board, it: List<Int>, words: Words): Boolean {
     return words.find(board.getStringFromIds(it))
 }
 
-private fun isAWord(board: Board, it: List<Int>, words: Words): Boolean {
+private fun isWord(board: Board, it: List<Int>, words: Words): Boolean {
     return words.isWord(board.getStringFromIds(it))
 }
 
-fun possibleWords(idxs: List<Int>, board: Board): List<List<Int>> {
-    val nextLetterIdx = neighbours[idxs.last()]!!.filter { !idxs.contains(it) }
-    return nextLetterIdx.map { idxs + it }
+fun possibleContinuations(wordData: List<Int>): List<List<Int>> {
+    val nextLetterIdx = neighbours[wordData.last()]!!.filter { !wordData.contains(it) }
+    return nextLetterIdx.map { wordData + it }
 }
 
 private val neighbours = mapOf(
