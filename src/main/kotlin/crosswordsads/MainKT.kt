@@ -10,10 +10,12 @@ object MainKT {
         val crosswordsDriver = SeleniumCrosswordsDriver(driver)
         login(crosswordsDriver)
         driver.get("https://slowotok.pl/play")
-        waitForRoundStart(crosswordsDriver)
-        val board = getBoard(crosswordsDriver)
-        val wordsOnBoard = getWordsOnBoard(board, words)
-        inputWords(crosswordsDriver, wordsOnBoard)
-        waitForRoundEnd(crosswordsDriver)
+        while (true) {
+            waitForRoundStart(crosswordsDriver)
+            val board = getBoard(crosswordsDriver)
+            val wordsOnBoard = getWordsOnBoard(board, words)
+            inputWords(crosswordsDriver, wordsOnBoard)
+            waitForRoundEnd(crosswordsDriver)
+        }
     }
 }
