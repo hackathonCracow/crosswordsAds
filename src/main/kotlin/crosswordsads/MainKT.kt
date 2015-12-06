@@ -14,5 +14,6 @@ object MainKT {
         val board = getBoard(crosswordsDriver)
         val wordsOnBoard = getWordsOnBoard(board, words)
         inputWords(crosswordsDriver, wordsOnBoard)
+        waitForRoundEnd(crosswordsDriver)
     }
 }
