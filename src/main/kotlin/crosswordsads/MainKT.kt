@@ -6,6 +6,9 @@ object MainKT {
     fun main(args: Array<String>) {
         val driver = FirefoxDriver()
         driver.get("https://slowotok.pl/account/register")
-        login(SeleniumCrosswordsDriver(driver))
+        val crosswordsDriver = SeleniumCrosswordsDriver(driver)
+        login(crosswordsDriver)
+        driver.get("https://slowotok.pl/play")
+        waitForRoundStart(crosswordsDriver)
     }
 }

@@ -12,9 +12,14 @@ class SeleniumCrosswordsDriver(val webDriver: WebDriver) : CrosswordsDriver {
     override fun clickOnXpath(type: String) {
         webDriver.findElement(By.xpath(type)).click()
     }
+
+    override fun getTextById(id: String): String {
+        return webDriver.findElement(By.id(id)).text
+    }
 }
 
 interface CrosswordsDriver {
     fun typeInId(id: String, text: String)
     fun clickOnXpath(type: String)
+    fun getTextById(id: String): String
 }
