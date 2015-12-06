@@ -1,10 +1,8 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import crosswordsads.MainKT;
 
 public class Main {
 
     public static void main(String[] args) {
-        WebDriver driver = new FirefoxDriver();
-        driver.get("http://google.com");
+        MainKT.INSTANCE.main(args);
     }
 }
