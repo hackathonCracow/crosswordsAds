@@ -12,15 +12,8 @@ class WordsTestCase {
     }
 
     @Test
-    fun shouldReturnTrueFalseIfWordExists() {
-        val (exists, startsWith) = Words(listOf("a")).find("a")
-        assert(exists)
-        assert(!startsWith)
-    }
-
-    @Test
     fun shouldReturnFalseTrueIfWordStartsWith() {
-        val (exists, startsWith) = Words(listOf("ab")).find("a")
+        val (exists, startsWith) = Words(listOf("c", "ab", "ab", "ab", "ab", "ab")).find("a")
         assert(!exists)
         assert(startsWith)
     }
