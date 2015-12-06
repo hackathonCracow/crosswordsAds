@@ -11,6 +11,7 @@ object MainKT {
         driver.get("https://slowotok.pl/play")
         waitForRoundStart(crosswordsDriver)
         val board = getBoard(crosswordsDriver)
-        getWordsOnBoard(board, Words())
+        val wordsOnBoard = getWordsOnBoard(board, Words())
+        inputWords(crosswordsDriver, wordsOnBoard)
     }
 }
