@@ -12,7 +12,7 @@ class Words(val words: List<String>) {
 
     companion object {
         fun fromFile(name: String): Words {
-            return Words(File(name).readLines(Charsets.UTF_8))
+            return Words(File(name).readLines(Charsets.UTF_8).filter { it.length > 2 })
         }
     }
 }

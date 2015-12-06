@@ -9,10 +9,9 @@ fun goDeper(proposal: List<Int>, board: Board, words: Words): Collection<List<St
         return emptyList()
     } else {
         val stringFromIds = board.getStringFromIds(proposal)
-        println(stringFromIds)
         val (exists, startsWith) = words.find(stringFromIds)
         val current = if (exists) {
-            println("matchmatchmatchmatchmatchmatchmatchmatchmatchmatchmatchmatchmatchmatchmatchmatchmatchmatchmatchmatch")
+            println(stringFromIds)
             listOf(proposal.map { it.toString() })
         } else {
             emptyList()
