@@ -5,12 +5,12 @@ fun waitForRoundStart(crosswordsDriver: CrosswordsDriver) {
         println("Waiting for new round")
         Thread.sleep(1000)
     }
-    println("Round begin")
+    println("Round began")
 }
 fun waitForRoundEnd(crosswordsDriver: CrosswordsDriver) {
     while (crosswordsDriver.getTextById("time_desc").toUpperCase().contains("DO KOŃCA")) {
-        println("Waiting for new round")
+        println("Waiting for round end")
         Thread.sleep(1000)
     }
-    println("Round begin")
+    println("Round ended")
 }
