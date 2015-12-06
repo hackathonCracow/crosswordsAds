@@ -5,6 +5,11 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.interactions.Actions
 
 class SeleniumCrosswordsDriver(val webDriver: WebDriver) : CrosswordsDriver {
+
+    override fun get(url: String) {
+        webDriver.get(url)
+    }
+
     override fun typeInId(id: String, text: String) {
         findElementById(id).sendKeys(text)
     }
@@ -33,6 +38,7 @@ class SeleniumCrosswordsDriver(val webDriver: WebDriver) : CrosswordsDriver {
 }
 
 interface CrosswordsDriver {
+    fun get(url: String)
     fun typeInId(id: String, text: String)
     fun clickOnXpath(type: String)
     fun getTextById(id: String): String

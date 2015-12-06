@@ -8,7 +8,6 @@ object MainKT {
         val driver = FirefoxDriver()
         val crosswordsDriver = SeleniumCrosswordsDriver(driver)
         while (true) {
-            driver.get("https://slowotok.pl/account/register")
             login(crosswordsDriver)
             driver.get("https://slowotok.pl/play")
             waitForRoundStart(crosswordsDriver)

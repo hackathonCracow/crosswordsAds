@@ -3,6 +3,7 @@ package crosswordsads
 import java.util.*
 
 fun login(crosswordsDriver: CrosswordsDriver) {
+    crosswordsDriver.get("https://slowotok.pl/account/register")
     crosswordsDriver.typeInId("Firstname", "Maski");
     crosswordsDriver.typeInId("Lastname", "http://antysmogowe.pl/")
     crosswordsDriver.typeInId("Email", randomEmail())
