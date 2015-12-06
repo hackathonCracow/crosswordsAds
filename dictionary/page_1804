@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Słowa podstawowe - Słownik SJP</title>
+<style type="text/css">
+body { margin: 10px; font: medium/1.3 sans-serif; word-wrap: break-word; }
+a { text-decoration: none; }
+a:link, .lc { color: #23a; }
+ul.m li { line-height: 2.4; }
+tt { font: small monospace, monospace; }
+hr { border: none; height: 1px; background: #ccc; }
+.z p { max-width: 34em; margin-bottom: 1.5em; }
+.y, .s { font-size: small; }
+.y, .y a { color: #444; }
+.ifnm { display: none; }
+@media (min-width: 760px) {
+body { margin: 20px auto; font: small/1.4 Verdana, sans-serif; max-width: 740px; }
+input, button, textarea { font: small Verdana, sans-serif; }
+h1 { font: bold xx-large sans-serif; }
+ul.m { list-style-type: none; padding: 0; }
+ul.m li { display: inline; border-left: 1px solid #ddd; padding: 0 .6em; line-height: 1.2; }
+ul.m li:first-child { border-left: 0; padding-left: 0; }
+ul.m a { color: #555; }
+.y, .s { font-size: x-small; }
+.ifnm { display: block; }
+.ifm { display: none; }
+}
+
+.ltab td { line-height: 1.4em; border-bottom: solid 1px #eee; padding-bottom: .3em; }
+.ltab th { line-height: 1.7em; text-align: left; background: #bcf; }
+.ltab td, .ltab th { padding-left: .4em; padding-right: .4em; }@media (max-width: 480px) { .ifnvn { display: none; } }
+</style>
+</head>
+
+<body>
+
+<div class="ifnm" style="overflow-y: auto;">
+<a href="/" style="float: left; background: #26c; color: #fff; border-radius: 2px; padding: 1px 1.95em 4px; font: bold 26px Verdana, sans-serif; text-decoration: none; margin-right: .8em; ">SJP</a>
+<form style="margin: 0;" action="/slownik/zg.phtml" method="post">
+<input style="margin: 0; width: 34%;" name="sl" /> <input style="margin-left: 0;" type="submit" value="sprawdź" />
+</form>
+</div>
+<div class="ifm" style="background: #26c; color: #fff; text-align: center; font: bold 20px/44px sans-serif; margin: -10px -10px 0;"><a href="#" onclick="a=document.getElementById('mblock'); if(a) a.className=(a.className?'':'ifnm'); return false;" style="position: absolute; left: 0; width: 46px;"><div style="display: inline-block; width: 20px; height: 3px; border-top: 3px solid #fff; border-bottom: 9px double #fff;"></div></a>Słownik SJP</div>
+<div class="ifnm" id="mblock">
+<ul type="square" class="m"><li><a href="/">Słownik Języka Polskiego SJP</a></li><li><a href="/slownik/lp.phtml">słowa</a></li><li><a href="/slownik/ok.phtml">komentarze</a></li><li><a href="/slownik/po.phtml">więcej</a></li></ul>
+<hr class="ifnm" style="margin: 1.25em 0 2em 0;" />
+</div>
+<form class="ifm" action="/slownik/zg.phtml" method="post">
+<table style="margin: 8px 0;" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top"><input name="sl" id="sl" style="box-sizing: border-box; width: 100%; font-size: small;" /></td><td valign="top" width="1%" style="padding-left: 4px;"><input type="submit" value="sprawdź" style="font-size: 13px;" /></td></tr></table>
+</form>
+
+<script>
+function opton() {
+  document.getElementById("optctl").style.display = 'none';
+  document.getElementById("optbox").style.display = 'block';
+}
+</script>
+
+<h1>Słowa podstawowe</h1>
+
+<form action="/slownik/lp.phtml" method="get">
+
+<div id="optbox" style="padding: 1em; margin-bottom: 2em; background: #eee; ">
+
+<p style="margin-top: 0;">
+zaczyna się od: <input name="f_st" size="8" value="" /> &nbsp;
+kończy na: <input name="f_en" size="8" value="" /> &nbsp; 
+<input type="submit" value="wyszukaj" />
+ &nbsp;<tt><b>144946</b></tt></p>
+
+<p style="margin-top: 0;">
+zaw. flagi: <input name="f_fl" size="5" value="-" /> &nbsp;
+niezaw. <input name="f_msfl" size="5" value="-" /> &nbsp;
+zn. <select name="f_mn">
+<option selected="selected" value="0">-</option>
+<option value="1">nie</option>
+<option value="2">tak</option>
+</select> &nbsp; 
+
+dop. <select name="f_vl">
+<option value="0">-</option>
+<option value="1">nie</option>
+<option selected="selected" value="2">tak</option>
+</select> &nbsp;
+
+
+</p>
+
+</div>
+
+</form>
+
+<table class="ltab" width="100%" cellspacing="2" cellpadding="2" border="0">
+<tr><th nowrap="nowrap">słowo podstawowe &darr;</th><th class="ifnvn" nowrap="nowrap">dop.</th><th nowrap="nowrap"><a rel="nofollow" href="?so=3&f_vl=2">aktualizacja</a></th><th class="ifnvn" nowrap="nowrap">zna.</th></tr>
+<tr><td><a href="/powiewny">powiewny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powie%C5%BA%C4%87">powieźć</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powi%C4%99d%C5%82y">powiędły</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-12-05 17:45</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powi%C4%99dn%C4%85%C4%87">powiędnąć</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-12-05 17:45</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powi%C4%99dni%C4%99ty">powiędnięty</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-12-05 17:45</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powi%C4%99ksza%C4%87">powiększać</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powi%C4%99kszalnik">powiększalnik</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-11-07 02:40</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powi%C4%99kszalnikowy">powiększalnikowy</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powi%C4%99kszalno%C5%9B%C4%87">powiększalność</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-08-18 23:03</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powi%C4%99kszenie">powiększenie</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-05 15:18</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powi%C4%99kszy%C4%87">powiększyć</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-05 15:33</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powi%C4%99zi%C4%87">powięzić</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-04-21 02:11</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powi%C4%99zie">powięzie</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-11-11 14:18</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powi%C4%99%C5%BA">powięź</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-19 00:04</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powijaczki">powijaczki</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powija%C4%87">powijać</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-04-21 01:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powijak">powijak</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-11-07 02:40</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powik%C5%82a%C4%87">powikłać</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powik%C5%82anie">powikłanie</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-19 00:04</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powin%C4%85%C4%87">powinąć</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powinien">powinien</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-07-27 23:04</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powinno%C5%9B%C4%87">powinność</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powinowactwo">powinowactwo</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powinowata">powinowata</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2010-09-06 14:59</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powinowaty">powinowaty</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-18 23:24</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powinowaty">powinowaty</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-19 00:04</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powinszowa%C4%87">powinszować</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powinszowanie">powinszowanie</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 20:07</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powios%C5%82owa%C4%87">powiosłować</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powirowa%C4%87">powirować</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-11-28 02:13</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powisie%C4%87">powisieć</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2010-12-04 19:56</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powi%C5%9Blacki">powiślacki</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-19 00:04</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powi%C5%9Blak">powiślak</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-19 00:04</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powi%C5%9Blanka">powiślanka</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-19 00:04</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powi%C5%9Bla%C5%84ski">powiślański</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-19 00:04</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powi%C5%9Ble">powiśle</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-19 00:04</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powita%C4%87">powitać</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powitalny">powitalny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powitanie">powitanie</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 20:07</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powizytacyjny">powizytacyjny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powje%C5%BCd%C5%BCa%C4%87">powjeżdżać</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-11-28 02:13</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powkleja%C4%87">powklejać</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powk%C5%82ada%C4%87">powkładać</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powkopywa%C4%87">powkopywać</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powkr%C4%99ca%C4%87">powkręcać</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powkuwa%C4%87">powkuwać</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-02-25 15:57</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powlatywa%C4%87">powlatywać</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-11-28 02:13</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powlec">powlec</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/powleczenie">powleczenie</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 20:08</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/powleczka">powleczka</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-05-19 17:43</td><td class="ifnvn">tak</td></tr>
+</table>
+
+<p style="font-size: large;"><b><a href="/slownik/lp.phtml?f_vl=2&amp;page=1805">następne &gt;</a></b></p>
+<p><a href="/slownik/lp.phtml?f_vl=2&amp;page=1">1</a> 
+ ... 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1779">1779</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1780">1780</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1781">1781</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1782">1782</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1783">1783</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1784">1784</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1785">1785</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1786">1786</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1787">1787</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1788">1788</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1789">1789</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1790">1790</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1791">1791</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1792">1792</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1793">1793</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1794">1794</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1795">1795</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1796">1796</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1797">1797</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1798">1798</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1799">1799</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1800">1800</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1801">1801</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1802">1802</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1803">1803</a> 
+<b>1804</b> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1805">1805</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1806">1806</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1807">1807</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1808">1808</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1809">1809</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1810">1810</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1811">1811</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1812">1812</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1813">1813</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1814">1814</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1815">1815</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1816">1816</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1817">1817</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1818">1818</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1819">1819</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1820">1820</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1821">1821</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1822">1822</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1823">1823</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1824">1824</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1825">1825</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1826">1826</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1827">1827</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1828">1828</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1829">1829</a> 
+ ... 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=2899">2899</a> 
+</p>
+<p class="s"><a href="/slownik/lp.phtml?f_vl=2&amp;page=150">15</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=300">30</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=450">45</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=600">60</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=750">75</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=900">90</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1050">105</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1200">120</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1350">135</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1500">150</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1650">165</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1800">180</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1950">195</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2100">210</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2250">225</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2400">240</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2550">255</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2700">270</a> </p></body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Słowa podstawowe - Słownik SJP</title>
+<style type="text/css">
+body { margin: 10px; font: medium/1.3 sans-serif; word-wrap: break-word; }
+a { text-decoration: none; }
+a:link, .lc { color: #23a; }
+ul.m li { line-height: 2.4; }
+tt { font: small monospace, monospace; }
+hr { border: none; height: 1px; background: #ccc; }
+.z p { max-width: 34em; margin-bottom: 1.5em; }
+.y, .s { font-size: small; }
+.y, .y a { color: #444; }
+.ifnm { display: none; }
+@media (min-width: 760px) {
+body { margin: 20px auto; font: small/1.4 Verdana, sans-serif; max-width: 740px; }
+input, button, textarea { font: small Verdana, sans-serif; }
+h1 { font: bold xx-large sans-serif; }
+ul.m { list-style-type: none; padding: 0; }
+ul.m li { display: inline; border-left: 1px solid #ddd; padding: 0 .6em; line-height: 1.2; }
+ul.m li:first-child { border-left: 0; padding-left: 0; }
+ul.m a { color: #555; }
+.y, .s { font-size: x-small; }
+.ifnm { display: block; }
+.ifm { display: none; }
+}
+
+.ltab td { line-height: 1.4em; border-bottom: solid 1px #eee; padding-bottom: .3em; }
+.ltab th { line-height: 1.7em; text-align: left; background: #bcf; }
+.ltab td, .ltab th { padding-left: .4em; padding-right: .4em; }@media (max-width: 480px) { .ifnvn { display: none; } }
+</style>
+</head>
+
+<body>
+
+<div class="ifnm" style="overflow-y: auto;">
+<a href="/" style="float: left; background: #26c; color: #fff; border-radius: 2px; padding: 1px 1.95em 4px; font: bold 26px Verdana, sans-serif; text-decoration: none; margin-right: .8em; ">SJP</a>
+<form style="margin: 0;" action="/slownik/zg.phtml" method="post">
+<input style="margin: 0; width: 34%;" name="sl" /> <input style="margin-left: 0;" type="submit" value="sprawdź" />
+</form>
+</div>
+<div class="ifm" style="background: #26c; color: #fff; text-align: center; font: bold 20px/44px sans-serif; margin: -10px -10px 0;"><a href="#" onclick="a=document.getElementById('mblock'); if(a) a.className=(a.className?'':'ifnm'); return false;" style="position: absolute; left: 0; width: 46px;"><div style="display: inline-block; width: 20px; height: 3px; border-top: 3px solid #fff; border-bottom: 9px double #fff;"></div></a>Słownik SJP</div>
+<div class="ifnm" id="mblock">
+<ul type="square" class="m"><li><a href="/">Słownik Języka Polskiego SJP</a></li><li><a href="/slownik/lp.phtml">słowa</a></li><li><a href="/slownik/ok.phtml">komentarze</a></li><li><a href="/slownik/po.phtml">więcej</a></li></ul>
+<hr class="ifnm" style="margin: 1.25em 0 2em 0;" />
+</div>
+<form class="ifm" action="/slownik/zg.phtml" method="post">
+<table style="margin: 8px 0;" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top"><input name="sl" id="sl" style="box-sizing: border-box; width: 100%; font-size: small;" /></td><td valign="top" width="1%" style="padding-left: 4px;"><input type="submit" value="sprawdź" style="font-size: 13px;" /></td></tr></table>
+</form>
+
+<script>
+function opton() {
+  document.getElementById("optctl").style.display = 'none';
+  document.getElementById("optbox").style.display = 'block';
+}
+</script>
+
+<h1>Słowa podstawowe</h1>
+
+<form action="/slownik/lp.phtml" method="get">
+
+<div id="optbox" style="padding: 1em; margin-bottom: 2em; background: #eee; ">
+
+<p style="margin-top: 0;">
+zaczyna się od: <input name="f_st" size="8" value="" /> &nbsp;
+kończy na: <input name="f_en" size="8" value="" /> &nbsp; 
+<input type="submit" value="wyszukaj" />
+ &nbsp;<tt><b>144946</b></tt></p>
+
+<p style="margin-top: 0;">
+zaw. flagi: <input name="f_fl" size="5" value="-" /> &nbsp;
+niezaw. <input name="f_msfl" size="5" value="-" /> &nbsp;
+zn. <select name="f_mn">
+<option selected="selected" value="0">-</option>
+<option value="1">nie</option>
+<option value="2">tak</option>
+</select> &nbsp; 
+
+dop. <select name="f_vl">
+<option value="0">-</option>
+<option value="1">nie</option>
+<option selected="selected" value="2">tak</option>
+</select> &nbsp;
+
+
+</p>
+
+</div>
+
+</form>
+
+<table class="ltab" width="100%" cellspacing="2" cellpadding="2" border="0">
+<tr><th nowrap="nowrap">słowo podstawowe &darr;</th><th class="ifnvn" nowrap="nowrap">dop.</th><th nowrap="nowrap"><a rel="nofollow" href="?so=3&f_vl=2">aktualizacja</a></th><th class="ifnvn" nowrap="nowrap">zna.</th></tr>
+<tr><td><a href="/kryptodepresyjny">kryptodepresyjny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-03-14 16:19</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptofaszysta">kryptofaszysta</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptofaszystka">kryptofaszystka</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-03-14 16:20</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptofit">kryptofit</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptogam">kryptogam</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptogamia">kryptogamia</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptogamiczny">kryptogamiczny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptogatunek">kryptogatunek</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-11-06 00:26</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptogej">kryptogej</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-07 03:20</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptograf">kryptograf</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptografia">kryptografia</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptograficzny">kryptograficzny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-03-14 16:21</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptogram">kryptogram</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptoklimat">kryptoklimat</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-11-07 02:45</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptokok">kryptokok</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:42</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptokokowy">kryptokokowy</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-02-11 21:56</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptokokoza">kryptokokoza</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptokomuch">kryptokomuch</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-05 23:11</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptokomuna">kryptokomuna</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2010-05-26 20:08</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptokomunista">kryptokomunista</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptokomunistka">kryptokomunistka</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-03-14 16:20</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptokomunistyczny">kryptokomunistyczny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2010-05-28 02:27</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptokomunizm">kryptokomunizm</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2010-05-28 02:27</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptokrystaliczny">kryptokrystaliczny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-02-26 01:25</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptol">kryptol</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptolegalny">kryptolegalny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2010-08-01 02:14</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptolewicowy">kryptolewicowy</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2014-06-01 21:13</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptolog">kryptolog</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptologia">kryptologia</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptologiczny">kryptologiczny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptolowy">kryptolowy</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptomeria">kryptomeria</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptomnezja">kryptomnezja</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-11-13 14:03</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptomnezyjny">kryptomnezyjny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-02-11 21:56</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptomorficzny">kryptomorficzny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptomorfizm">kryptomorfizm</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-11-07 02:45</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/krypton">krypton</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptonim">kryptonim</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptonimiczny">kryptonimiczny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2010-08-01 01:42</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptonimowa%C4%87">kryptonimować</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:49</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptonimowy">kryptonimowy</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptonowy">kryptonowy</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:43</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptopolityczny">kryptopolityczny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2010-08-01 02:14</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptopornografia">kryptopornografia</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:44</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptoportyk">kryptoportyk</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:44</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptopsychiczny">kryptopsychiczny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-02-26 01:26</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptorchizm">kryptorchizm</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:44</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/kryptoreklama">kryptoreklama</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:44</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptoreklamowy">kryptoreklamowy</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-02-11 21:56</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/kryptoseksualny">kryptoseksualny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-03-19 13:44</td><td class="ifnvn">nie</td></tr>
+</table>
+
+<p style="font-size: large;"><b><a href="/slownik/lp.phtml?f_vl=2&amp;page=1008">następne &gt;</a></b></p>
+<p><a href="/slownik/lp.phtml?f_vl=2&amp;page=1">1</a> 
+ ... 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=982">982</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=983">983</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=984">984</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=985">985</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=986">986</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=987">987</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=988">988</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=989">989</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=990">990</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=991">991</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=992">992</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=993">993</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=994">994</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=995">995</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=996">996</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=997">997</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=998">998</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=999">999</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1000">1000</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1001">1001</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1002">1002</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1003">1003</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1004">1004</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1005">1005</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1006">1006</a> 
+<b>1007</b> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1008">1008</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1009">1009</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1010">1010</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1011">1011</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1012">1012</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1013">1013</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1014">1014</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1015">1015</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1016">1016</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1017">1017</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1018">1018</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1019">1019</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1020">1020</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1021">1021</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1022">1022</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1023">1023</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1024">1024</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1025">1025</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1026">1026</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1027">1027</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1028">1028</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1029">1029</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1030">1030</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1031">1031</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=1032">1032</a> 
+ ... 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=2899">2899</a> 
+</p>
+<p class="s"><a href="/slownik/lp.phtml?f_vl=2&amp;page=150">15</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=300">30</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=450">45</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=600">60</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=750">75</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=900">90</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1050">105</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1200">120</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1350">135</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1500">150</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1650">165</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1800">180</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1950">195</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2100">210</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2250">225</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2400">240</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2550">255</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2700">270</a> </p></body>
+</html>

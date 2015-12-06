@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Słowa podstawowe - Słownik SJP</title>
+<style type="text/css">
+body { margin: 10px; font: medium/1.3 sans-serif; word-wrap: break-word; }
+a { text-decoration: none; }
+a:link, .lc { color: #23a; }
+ul.m li { line-height: 2.4; }
+tt { font: small monospace, monospace; }
+hr { border: none; height: 1px; background: #ccc; }
+.z p { max-width: 34em; margin-bottom: 1.5em; }
+.y, .s { font-size: small; }
+.y, .y a { color: #444; }
+.ifnm { display: none; }
+@media (min-width: 760px) {
+body { margin: 20px auto; font: small/1.4 Verdana, sans-serif; max-width: 740px; }
+input, button, textarea { font: small Verdana, sans-serif; }
+h1 { font: bold xx-large sans-serif; }
+ul.m { list-style-type: none; padding: 0; }
+ul.m li { display: inline; border-left: 1px solid #ddd; padding: 0 .6em; line-height: 1.2; }
+ul.m li:first-child { border-left: 0; padding-left: 0; }
+ul.m a { color: #555; }
+.y, .s { font-size: x-small; }
+.ifnm { display: block; }
+.ifm { display: none; }
+}
+
+.ltab td { line-height: 1.4em; border-bottom: solid 1px #eee; padding-bottom: .3em; }
+.ltab th { line-height: 1.7em; text-align: left; background: #bcf; }
+.ltab td, .ltab th { padding-left: .4em; padding-right: .4em; }@media (max-width: 480px) { .ifnvn { display: none; } }
+</style>
+</head>
+
+<body>
+
+<div class="ifnm" style="overflow-y: auto;">
+<a href="/" style="float: left; background: #26c; color: #fff; border-radius: 2px; padding: 1px 1.95em 4px; font: bold 26px Verdana, sans-serif; text-decoration: none; margin-right: .8em; ">SJP</a>
+<form style="margin: 0;" action="/slownik/zg.phtml" method="post">
+<input style="margin: 0; width: 34%;" name="sl" /> <input style="margin-left: 0;" type="submit" value="sprawdź" />
+</form>
+</div>
+<div class="ifm" style="background: #26c; color: #fff; text-align: center; font: bold 20px/44px sans-serif; margin: -10px -10px 0;"><a href="#" onclick="a=document.getElementById('mblock'); if(a) a.className=(a.className?'':'ifnm'); return false;" style="position: absolute; left: 0; width: 46px;"><div style="display: inline-block; width: 20px; height: 3px; border-top: 3px solid #fff; border-bottom: 9px double #fff;"></div></a>Słownik SJP</div>
+<div class="ifnm" id="mblock">
+<ul type="square" class="m"><li><a href="/">Słownik Języka Polskiego SJP</a></li><li><a href="/slownik/lp.phtml">słowa</a></li><li><a href="/slownik/ok.phtml">komentarze</a></li><li><a href="/slownik/po.phtml">więcej</a></li></ul>
+<hr class="ifnm" style="margin: 1.25em 0 2em 0;" />
+</div>
+<form class="ifm" action="/slownik/zg.phtml" method="post">
+<table style="margin: 8px 0;" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top"><input name="sl" id="sl" style="box-sizing: border-box; width: 100%; font-size: small;" /></td><td valign="top" width="1%" style="padding-left: 4px;"><input type="submit" value="sprawdź" style="font-size: 13px;" /></td></tr></table>
+</form>
+
+<script>
+function opton() {
+  document.getElementById("optctl").style.display = 'none';
+  document.getElementById("optbox").style.display = 'block';
+}
+</script>
+
+<h1>Słowa podstawowe</h1>
+
+<form action="/slownik/lp.phtml" method="get">
+
+<div id="optbox" style="padding: 1em; margin-bottom: 2em; background: #eee; ">
+
+<p style="margin-top: 0;">
+zaczyna się od: <input name="f_st" size="8" value="" /> &nbsp;
+kończy na: <input name="f_en" size="8" value="" /> &nbsp; 
+<input type="submit" value="wyszukaj" />
+ &nbsp;<tt><b>144946</b></tt></p>
+
+<p style="margin-top: 0;">
+zaw. flagi: <input name="f_fl" size="5" value="-" /> &nbsp;
+niezaw. <input name="f_msfl" size="5" value="-" /> &nbsp;
+zn. <select name="f_mn">
+<option selected="selected" value="0">-</option>
+<option value="1">nie</option>
+<option value="2">tak</option>
+</select> &nbsp; 
+
+dop. <select name="f_vl">
+<option value="0">-</option>
+<option value="1">nie</option>
+<option selected="selected" value="2">tak</option>
+</select> &nbsp;
+
+
+</p>
+
+</div>
+
+</form>
+
+<table class="ltab" width="100%" cellspacing="2" cellpadding="2" border="0">
+<tr><th nowrap="nowrap">słowo podstawowe &darr;</th><th class="ifnvn" nowrap="nowrap">dop.</th><th nowrap="nowrap"><a rel="nofollow" href="?so=3&f_vl=2">aktualizacja</a></th><th class="ifnvn" nowrap="nowrap">zna.</th></tr>
+<tr><td><a href="/dendrymer">dendrymer</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-11-07 02:44</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/dendryt">dendryt</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 16:59</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/dendryta">dendryta</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-10-04 12:14</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/dendrytowy">dendrytowy</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 16:59</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/dendrytyczny">dendrytyczny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 16:59</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denerwowa%C4%87">denerwować</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-02-25 19:47</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denerwuj%C4%85cy">denerwujący</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 16:59</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denga">denga</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-08-17 16:44</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/deni">deni</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2005-10-21 01:56</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denier">denier</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 16:59</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denim">denim</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-08-17 16:44</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denimowy">denimowy</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-12-22 20:40</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denitracja">denitracja</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/denitracyjny">denitracyjny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-02-15 22:04</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/denitryfikacja">denitryfikacja</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denitryfikacyjny">denitryfikacyjny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denitryfikator">denitryfikator</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/deniwelacja">deniwelacja</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/deniwelacyjny">deniwelacyjny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-02-15 22:05</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/deniwelator">deniwelator</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-11-07 02:38</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denkarka">denkarka</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2004-12-27 01:02</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denko">denko</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denniak">denniak</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/dennica">dennica</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denniej">denniej</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-01-27 16:08</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/dennik">dennik</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/dennikowate">dennikowate</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/dennikowaty">dennikowaty</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-02-25 19:48</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denny">denny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denominacja">denominacja</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denominacyjny">denominacyjny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-02-25 19:48</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denominalny">denominalny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-01-25 04:39</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denominator">denominator</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2010-06-13 20:05</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denominowa%C4%87">denominować</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-02-01 00:23</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denotacja">denotacja</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:00</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denotacyjny">denotacyjny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2012-02-25 19:49</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denotat">denotat</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2007-11-07 02:44</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denotatywny">denotatywny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2006-12-22 20:40</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/denotowa%C4%87">denotować</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-07-11 17:41</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/densometr">densometr</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:02</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/densymetr">densymetr</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:02</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/densytometr">densytometr</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:02</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/densytometria">densytometria</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:02</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/densytometryczny">densytometryczny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2010-07-14 02:02</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/dentalny">dentalny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:02</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/dentyna">dentyna</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:02</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/dentysta">dentysta</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:02</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/dentystka">dentystka</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:02</td><td class="ifnvn">tak</td></tr>
+<tr><td><a href="/dentystyczny">dentystyczny</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:02</td><td class="ifnvn">nie</td></tr>
+<tr><td><a href="/dentystyka">dentystyka</a></td><td class="ifnvn">tak</td><td nowrap="nowrap">2011-09-15 17:02</td><td class="ifnvn">tak</td></tr>
+</table>
+
+<p style="font-size: large;"><b><a href="/slownik/lp.phtml?f_vl=2&amp;page=375">następne &gt;</a></b></p>
+<p><a href="/slownik/lp.phtml?f_vl=2&amp;page=1">1</a> 
+ ... 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=349">349</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=350">350</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=351">351</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=352">352</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=353">353</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=354">354</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=355">355</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=356">356</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=357">357</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=358">358</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=359">359</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=360">360</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=361">361</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=362">362</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=363">363</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=364">364</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=365">365</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=366">366</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=367">367</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=368">368</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=369">369</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=370">370</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=371">371</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=372">372</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=373">373</a> 
+<b>374</b> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=375">375</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=376">376</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=377">377</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=378">378</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=379">379</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=380">380</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=381">381</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=382">382</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=383">383</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=384">384</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=385">385</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=386">386</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=387">387</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=388">388</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=389">389</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=390">390</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=391">391</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=392">392</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=393">393</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=394">394</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=395">395</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=396">396</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=397">397</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=398">398</a> 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=399">399</a> 
+ ... 
+<a href="/slownik/lp.phtml?f_vl=2&amp;page=2899">2899</a> 
+</p>
+<p class="s"><a href="/slownik/lp.phtml?f_vl=2&amp;page=150">15</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=300">30</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=450">45</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=600">60</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=750">75</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=900">90</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1050">105</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1200">120</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1350">135</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1500">150</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1650">165</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1800">180</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=1950">195</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2100">210</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2250">225</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2400">240</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2550">255</a> <a href="/slownik/lp.phtml?f_vl=2&amp;page=2700">270</a> </p></body>
+</html>
