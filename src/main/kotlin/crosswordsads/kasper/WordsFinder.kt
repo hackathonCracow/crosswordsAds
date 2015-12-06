@@ -10,13 +10,11 @@ fun realWords(lista: List<Int>, board: Board, words: MyWords): List<List<Int>> {
 }
 
 private fun isRealWord(board: Board, it: List<Int>, words: MyWords): Boolean {
-    val a = words.find(board.getStringFromIds(it)).isNotEmpty()
-    return a
+    return words.find(board.getStringFromIds(it))
 }
 
 private fun isAWord(board: Board, it: List<Int>, words: MyWords): Boolean {
-    val a = words.isWord(board.getStringFromIds(it))
-    return a
+    return words.isWord(board.getStringFromIds(it))
 }
 
 fun possibleWords(idxs: List<Int>, board: Board): List<List<Int>> {

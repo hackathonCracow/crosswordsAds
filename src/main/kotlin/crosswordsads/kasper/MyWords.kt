@@ -1,11 +1,10 @@
 package crosswordsads.kasper
 
-import crosswordsads.Words
 import java.io.File
 
 class MyWords(val listOfStrings: List<String>) {
-    fun find(s: String): List<String> {
-        return listOfStrings.filter { it.startsWith(s) }
+    fun find(s: String): Boolean {
+        return listOfStrings.any { it.startsWith(s) }
     }
 
     fun isWord(s: String): Boolean {
