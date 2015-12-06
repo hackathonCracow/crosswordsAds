@@ -13,6 +13,10 @@ class SeleniumCrosswordsDriver(val webDriver: WebDriver) : CrosswordsDriver {
         findElementById(id).sendKeys(text)
     }
 
+    override fun clickOnId(id: String) {
+        findElementById(id).click()
+    }
+
     override fun clickOnXpath(type: String) {
         webDriver.findElement(By.xpath(type)).click()
     }
@@ -47,6 +51,7 @@ class SeleniumCrosswordsDriver(val webDriver: WebDriver) : CrosswordsDriver {
 interface CrosswordsDriver {
     fun get(url: String)
     fun typeInId(id: String, text: String)
+    fun clickOnId(id: String)
     fun clickOnXpath(type: String)
     fun getTextById(id: String): String
     fun pressOnId(id: Int)
