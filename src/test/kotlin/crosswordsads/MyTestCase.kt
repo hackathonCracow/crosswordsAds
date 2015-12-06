@@ -35,7 +35,7 @@ class MyTestCase() {
         val board = Board(listOf("h","z","r","a","i","o","l","i","w","e","r","a","t","s","w","t"))
 
         val slowa = (0..15).flatMap { realWords(listOf(it), board, words) }
-        assertEquals(1, slowa.size)
+        assertEquals(148, slowa.size)
     }
 
 }
