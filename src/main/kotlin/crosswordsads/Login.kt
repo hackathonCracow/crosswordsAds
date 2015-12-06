@@ -4,7 +4,7 @@ import java.util.*
 
 fun login(crosswordsDriver: CrosswordsDriver) {
     crosswordsDriver.typeInId("Firstname", "Maski");
-    crosswordsDriver.typeInId("Lastname", "Przeciwpyłowe")
+    crosswordsDriver.typeInId("Lastname", "http://antysmogowe.pl/")
     crosswordsDriver.typeInId("Email", randomEmail())
     crosswordsDriver.typeInId("Password", "123456")
     crosswordsDriver.typeInId("ConfirmPassword", "123456")

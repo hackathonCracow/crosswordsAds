@@ -6,17 +6,18 @@ object MainKT {
     fun main(args: Array<String>) {
         val words = Words.fromFile("dictionary/slownik")
         val driver = FirefoxDriver()
-        driver.get("https://slowotok.pl/account/register")
         val crosswordsDriver = SeleniumCrosswordsDriver(driver)
-        login(crosswordsDriver)
-        driver.get("https://slowotok.pl/play")
         while (true) {
+            driver.get("https://slowotok.pl/account/register")
+            login(crosswordsDriver)
+            driver.get("https://slowotok.pl/play")
             waitForRoundStart(crosswordsDriver)
             val board = getBoard(crosswordsDriver)
             val wordsOnBoard = getWordsOnBoardKarol(board, words)
             println(wordsOnBoard)
             inputWords(crosswordsDriver, wordsOnBoard)
             waitForRoundEnd(crosswordsDriver)
+            driver.get("https://slowotok.pl/account/logoff")
         }
     }
 }
