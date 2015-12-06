@@ -13,7 +13,7 @@ class Words {
     }
 
     fun find(s: String): Boolean {
-        return letterToWords[s.first()]!!.any { it.startsWith(s) }
+        return letterToWords[s.first()]?.any { it.startsWith(s) } ?: false
     }
 
     fun isWord(s: String): Boolean {
