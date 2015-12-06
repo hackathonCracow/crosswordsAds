@@ -13,7 +13,8 @@ object MainKT {
         while (true) {
             waitForRoundStart(crosswordsDriver)
             val board = getBoard(crosswordsDriver)
-            val wordsOnBoard = getWordsOnBoard(board, words)
+            val wordsOnBoard = getWordsOnBoardKarol(board, words)
+            println(wordsOnBoard)
             inputWords(crosswordsDriver, wordsOnBoard)
             waitForRoundEnd(crosswordsDriver)
         }
